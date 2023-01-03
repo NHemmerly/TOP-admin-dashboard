@@ -52,8 +52,9 @@ table {
 
 :root {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    --sidebar-color: #ff0f19;
-    --header-color: #a31000;
+    --sidebar-bg: #ff0f19;
+    --header-bg: #a31000;
+    --content-bg: #FFFAD7;
 }
 
 h1 {
@@ -63,11 +64,12 @@ h1 {
 
 h2 {
     font-size: 32px;
-    font-weight: ;
+    font-weight: 600;
 }
 
 h3 {
     font-size: 24px;
+    font-weight: 600;
 }
 
 p {
@@ -81,7 +83,7 @@ p {
 }
 
 .sidebar {
-    background-color: var(--sidebar-color);
+    background-color: var(--sidebar-bg);
     display: grid;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -91,10 +93,24 @@ p {
 .right-pane {
     display: grid;
     grid-column: 2 / 3;
-    grid-template-rows: 1fr 7fr;
+    grid-template-rows: 1fr 5fr;
+    background-color: var(--content-bg);
 }
 
 .header {
-    background-color: var(--header-color);
+    background-color: var(--header-bg);
     grid-row: 1 / 2;
+}
+
+.content {
+    
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-row: 2 / 6;
+
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
