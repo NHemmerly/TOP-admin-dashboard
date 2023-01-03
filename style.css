@@ -55,6 +55,7 @@ table {
     --sidebar-bg: #ff0f19;
     --header-bg: #a31000;
     --content-bg: #FFFAD7;
+    --menu-text: #FFFCF9;
 }
 
 h1 {
@@ -84,10 +85,17 @@ p {
 
 .sidebar {
     background-color: var(--sidebar-bg);
+    color: var(--menu-text);
     display: grid;
+    grid-template-rows: 1fr 5fr 3fr;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    padding: 3rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.sidebar > ul {
+    display: grid;
 }
 
 .right-pane {
@@ -103,7 +111,6 @@ p {
 }
 
 .content {
-    
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-row: 2 / 6;
