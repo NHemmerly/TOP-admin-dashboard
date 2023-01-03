@@ -105,6 +105,8 @@ p {
     background-color: var(--content-bg);
 }
 
+/* Styling for header */
+
 .header {
     display: flex;
     flex-direction: column;
@@ -116,11 +118,34 @@ p {
 
 .top {
     display: flex;
+    justify-content: space-between;
+}
+
+.login-message {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
 }
 
 .bottom {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.bottom-buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.bottom-buttons > button {
+    width: 100px;
+    height: 30px;
+    border: 2px solid var(--menu-text);
+    border-radius: 12px;
+}
+
+/* Styling for content and all cards */
 
 .content {
     display: grid;
@@ -133,4 +158,11 @@ p {
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+input[type="text"] {
+    height: 30px;
+    border: solid 2px var(--menu-text);
+    border-radius: 15px;
+    width: max(200px, 60%);
 }
