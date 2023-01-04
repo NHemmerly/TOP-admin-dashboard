@@ -192,8 +192,13 @@ input[type="text"] {
     background-color: var(--card-bg);
     border: 3px solid var(--card-border);
     border-radius: 20px;
-    height: 200px;
     box-shadow: 5px 5px 6px rgba(0,0,0,.3);
+}
+
+.rigid {
+    display: flex;
+    justify-content: center;
+    height: 300px;
 }
 
 p {
@@ -216,4 +221,9 @@ p {
 .trending > .card {
     margin: 15px;
     height: 250px;
+}
+
+.card-img-top {
+    height: 300px;
+    width: auto;
 }
