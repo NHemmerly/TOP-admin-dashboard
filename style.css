@@ -225,3 +225,19 @@ p {
     height: 300px;
     width: auto;
 }
+
+/* Icons in Sidebar */
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons > img {
+    margin-right: 10px;
+}
+
+.icons > h3 {
+    margin: 0;
+}
+
