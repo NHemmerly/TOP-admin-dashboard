@@ -91,7 +91,7 @@ p {
 
 /* General overall layout */
 
-.container {
+.container-notbootstrap {
     display: grid;
     grid-template-columns: 1fr 4fr;
     height: 100vh;
@@ -189,16 +189,11 @@ input[type="text"] {
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     background-color: var(--card-bg);
     border: 3px solid var(--card-border);
     border-radius: 20px;
-    padding: 15px;
     height: 200px;
     box-shadow: 5px 5px 6px rgba(0,0,0,.3);
-
 }
 
 p {
