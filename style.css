@@ -50,12 +50,17 @@ table {
 
 /* Styling for TOP-admin-dashboard */
 
+
+/* Setting Characteristics of font and hierarchy */
+
 :root {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    --sidebar-bg: #ff0f19;
-    --header-bg: #a31000;
-    --content-bg: #FFFAD7;
-    --menu-text: #FFFCF9;
+    --sidebar-bg: #83d0ff;
+    --header-bg: #66b0f0;
+    --content-bg: #FFFFea;
+    --menu-text: #FFFFea;
+    --card-bg: #fde7cc;
+    --card-border: #77809d;
 }
 
 h1 {
@@ -76,6 +81,8 @@ h3 {
 p {
     font-size: 14px;
 }
+
+/* General overall layout */
 
 .container {
     display: grid;
@@ -121,6 +128,13 @@ p {
     justify-content: space-between;
 }
 
+input[type="text"] {
+    height: 30px;
+    border: solid 2px var(--menu-text);
+    border-radius: 15px;
+    width: max(200px, 60%);
+}
+
 .login-message {
     display: flex;
     align-items: center;
@@ -155,14 +169,17 @@ p {
 
 }
 
-.projects {
+.projects > ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 15px;
+    gap: 15px;
 }
 
-input[type="text"] {
-    height: 30px;
-    border: solid 2px var(--menu-text);
-    border-radius: 15px;
-    width: max(200px, 60%);
+.card {
+    background-color: var(--card-bg);
+    border: 3px solid var(--card-border);
+    border-radius: 20px;
+    padding: 15px;
+    height: 200px;
 }
