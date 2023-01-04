@@ -207,7 +207,6 @@ p {
 
 .announcements > .card {
     margin: 15px;
-    height: 250px;
 }
 
 .card > ul > li {
@@ -220,7 +219,6 @@ p {
 
 .trending > .card {
     margin: 15px;
-    height: 250px;
 }
 
 .card-img-top {
