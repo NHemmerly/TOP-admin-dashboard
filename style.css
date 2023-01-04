@@ -61,6 +61,7 @@ table {
     --menu-text: #FFFFea;
     --card-bg: #fde7cc;
     --card-border: #77809d;
+    --card-text: #334059;
 }
 
 h1 {
@@ -78,8 +79,14 @@ h3 {
     font-weight: 600;
 }
 
-p {
+h4 {
     font-size: 14px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 600;
 }
 
 /* General overall layout */
@@ -177,9 +184,34 @@ input[type="text"] {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     background-color: var(--card-bg);
     border: 3px solid var(--card-border);
     border-radius: 20px;
     padding: 15px;
     height: 200px;
+}
+
+.card > p {
+    color: var(--card-text);
+}
+
+.announcements > .card {
+    margin: 15px;
+    height: 250px;
+}
+
+.card > ul > li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px dashed var(--card-border);
+}
+
+.trending > .card {
+    margin: 15px;
+    height: 250px;
 }
