@@ -62,6 +62,7 @@ table {
     --card-bg: #fde7cc;
     --card-border: #77809d;
     --card-text: #334059;
+    --button-bg: #ffd8d4;
 }
 
 h1 {
@@ -182,6 +183,13 @@ input[type="text"] {
     height: 50px;
     border: 2px solid var(--menu-text);
     border-radius: 30px;
+    background-color: var(--content-bg);
+    box-shadow: 5px 5px 10px rgba(0,0,0, .2);
+}
+
+.bottom-buttons > button:hover {
+    background-color: var(--button-bg);
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, .5);
 }
 
 .profile {
