@@ -101,7 +101,7 @@ p {
     background-color: var(--sidebar-bg);
     color: var(--menu-text);
     display: grid;
-    grid-template-rows: 1fr 5fr 3fr;
+    grid-template-rows: 1fr 5fr 8fr;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     padding: 2rem;
@@ -131,7 +131,20 @@ p {
     padding: 2rem;
     gap: 2rem;
     box-shadow: 0px 10px 5px rgba(0,0,0,.1);
+    color: var(--menu-text);
 
+}
+
+#profile-pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+
+#profile-pic-large {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
 }
 
 .top {
@@ -166,9 +179,15 @@ input[type="text"] {
 
 .bottom-buttons > button {
     width: 100px;
-    height: 30px;
+    height: 50px;
     border: 2px solid var(--menu-text);
-    border-radius: 12px;
+    border-radius: 30px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: min(1rem, 15px);
 }
 
 /* Styling for content and all cards */
